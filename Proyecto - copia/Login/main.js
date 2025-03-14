@@ -107,12 +107,12 @@ document.addEventListener('DOMContentLoaded', () => {
         // Try different redirection methods
         try {
           // Method 1: Direct assignment
-          window.location.href = '../index.html';
+          window.location.href = '/index.html';
           
           // If that doesn't work, try after a short delay
           setTimeout(function() {
             // Method 2: Replace
-            window.location.replace('../index.html');
+            window.location.replace('/index.html');
             
             // Method 3: Absolute path (if you know it)
             // Uncomment and modify this if needed
@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
           
           // Create a fallback link
           const link = document.createElement('a');
-          link.href = '../index.html';
+          link.href = '/index.html';
           link.textContent = 'Ir a la página principal';
           link.style.display = 'block';
           link.style.margin = '20px auto';
